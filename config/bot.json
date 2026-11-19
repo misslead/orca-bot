@@ -1,0 +1,28 @@
+{
+  "name": "OrcaBot",
+  "model": "deepseek-v4.1-flash",
+  "effort": "high",
+  "codebuddyBin": "codebuddy",
+  "egoBin": "ego-browser",
+  "planner": {
+    "prefer": "ego",
+    "chatgptUrl": "https://chatgpt.com/",
+    "timeoutMs": 300000
+  },
+  "roles": {
+    "planner": "bot-planner",
+    "scout": "bot-scout",
+    "builder": "bot-builder",
+    "reviewer": "bot-reviewer",
+    "archivist": "bot-archivist"
+  },
+  "limits": {
+    "maxSubagentCallsPerRun": 24,
+    "maxTasksPerRun": 10,
+    "maxFixAttempts": 1,
+    "subagentTimeoutMs": 1800000
+  },
+  "defaultWorkspace": "workspace",
+  "allowedWorkspaceRoots": ["."],
+  "gitIdentity": { "name": "OrcaBot", "email": "orcabot@local" }
+}
